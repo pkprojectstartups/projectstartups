@@ -63,28 +63,36 @@
   <!-- Header -->
   <header class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
     <div class="container">
-      <a href="{{ site.baseurl }}/" class="navbar-brand">VC Database</a>
+      <a href="{{ site.baseurl }}/" class="navbar-brand">projectstartups.com</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <nav class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="{{ site.baseurl }}/" class="nav-link {% if page.url == "/" %}active{% endif %}">Home</a>
+            <a href="https://projectstartups.com" class="nav-link {% if page.url == 'https://projectstartups.com/' %}active{% endif %}">Home</a>
           </li>
           <li class="nav-item">
-            <a href="{{ site.baseurl }}/vc_list" class="nav-link {% if page.url == "/vc-lists/" %}active{% endif %}">VC Lists</a>
+            <a href="https://vc.projectstartups.com" class="nav-link {% if page.url == 'https://vc.projectstartups.com/' %}active{% endif %}">VCs</a>
           </li>
           <li class="nav-item">
-            <a href="{{ site.baseurl }}/buy-vc-lists" class="nav-link {% if page.url == "/buy-vc-lists/" %}active{% endif %}">Buy VC Lists</a>
+            <a href="https://vc.projectstartups.com/vc_list/" class="nav-link {% if page.url == 'https://vc.projectstartups.com/vc_list/' %}active{% endif %}">VC Lists</a>
           </li>
           <li class="nav-item">
-            <a href="{{ site.baseurl }}/affiliates" class="nav-link {% if page.url == "/affiliates/" %}active{% endif %}">Affiliates</a>
+            <a href="https://startup.projectstartups.com" class="nav-link {% if page.url == 'https://startup.projectstartups.com/' %}active{% endif %}">Startups</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://comment.projectstartups.com" class="nav-link {% if page.url == 'https://comment.projectstartups.com/' %}active{% endif %}">Comments</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://payhip.com/projectstartups" class="nav-link">Buy lists</a>
           </li>
         </ul>
       </nav>
     </div>
-  </header>
+</header>
+
+
 
   <!-- Main Content -->
   <main class="container py-5 mt-5">
@@ -97,28 +105,28 @@
     <div class="container py-3">
       <div class="row">
         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <p class="mb-0">© {{ "now" | date: "%Y" }} VC Database</p>
+          <p class="mb-0">© {{ "now" | date: "%Y" }} projectstartups.com</p>
         </div>
         <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
           <ul class="nav">
             <li class="nav-item">
-              <a href="https://www.linkedin.com" class="nav-link">
+              <a href="https://www.linkedin.com/in/projectstartups/" class="nav-link">
                 <i class="bi bi-linkedin"></i> LinkedIn
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://twitter.com" class="nav-link">
+              <a href="https://twitter.com/projectstartups" class="nav-link">
                 <i class="bi bi-twitter"></i> Twitter
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://facebook.com" class="nav-link">
+              <a href="https://www.facebook.com/projectstartups" class="nav-link">
                 <i class="bi bi-facebook"></i> Facebook
               </a>
             </li>
             <li class="nav-item">
-              <a href="mailto:your-email@example.com" class="nav-link">
-                <i class="bi bi-envelope"></i> Email
+              <a href="mailto:pk@projectstartups.com" class="nav-link">
+                <i class="bi bi-envelope"></i> pk@projectstartups.com
               </a>
             </li>
           </ul>
