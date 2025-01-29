@@ -1,2 +1,0 @@
-# projecgstartups
-Home
