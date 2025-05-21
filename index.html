@@ -3,22 +3,22 @@ layout: default
 ---
 
 <div class="d-flex align-items-center justify-content-center vh-100 bg-light">
-    <div class="text-center p-4 bg-white shadow rounded">
-        <h1 class="mb-4">Welcome to <span class="text-primary">projectstartups.com</span></h1>
-        <p class="mb-4 text-secondary">
-            Your gateway to exploring venture capital, startups, and expert insights.
-        </p>
-        <div class="d-grid gap-3">
-            <a href="https://vc.projectstartups.com" class="btn btn-primary btn-lg">
-                VC Database
-            </a>
-            <a href="https://startups.projectstartups.com" class="btn btn-success btn-lg">
-                Funded Startups
-            </a>
-            <a href="https://comments.projectstartups.com" class="btn btn-info btn-lg text-white">
-                Industry Expert Comments
-            </a>
-        </div>
-    </div>
+  <div class="text-center p-4 bg-white shadow rounded">
+    <h1 class="mb-4">
+      Redirecting you to <span class="text-primary">vc.projectstartups.com</span>
+    </h1>
+    <p class="mb-4 text-secondary">
+      If you're not redirected automatically, click the button below.
+    </p>
+    <a href="https://vc.projectstartups.com" class="btn btn-primary btn-lg">
+      Go to VC Database
+    </a>
+  </div>
 </div>
 
+<script>
+  // Redirect after short delay (1 second)
+  setTimeout(function () {
+    window.location.href = "https://vc.projectstartups.com";
+  }, 1000);
+</script>
