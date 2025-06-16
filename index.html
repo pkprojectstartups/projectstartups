@@ -1,24 +1,216 @@
 ---
 layout: default
+title: projectstartups.com – Startup and VC Directories
+meta_title: projectstartups.com – The Central Hub for Startup & VC Data
+meta_description: Explore curated databases of funded startups and venture capital firms. Built for founders, researchers, and investors.
+permalink: /
 ---
 
-<div class="d-flex align-items-center justify-content-center vh-100 bg-light">
-  <div class="text-center p-4 bg-white shadow rounded">
-    <h1 class="mb-4">
-      Redirecting you to <span class="text-primary">vc.projectstartups.com</span>
-    </h1>
-    <p class="mb-4 text-secondary">
-      If you're not redirected automatically, click the button below.
-    </p>
-    <a href="https://vc.projectstartups.com" class="btn btn-primary btn-lg">
-      Go to VC Database
-    </a>
+<style>
+.startup-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.startup-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.card-link {
+  color: inherit;
+}
+.card-link:hover {
+  text-decoration: none;
+}
+
+.custom-hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #0d6efd 30%, transparent);
+  opacity: 0.25;
+}
+</style>
+
+<div class="container text-center py-5">
+
+  <!-- Hero Section -->
+  <h1 class="display-4 fw-bold mb-3">projectstartups.com</h1>
+  <p class="lead mb-4">
+    Open-access platform for curated startup and VC data.<br>
+    Browse free lists, search by market or stage, explore custom directories, and download structured data.
+  </p>
+  <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mb-5">
+    <a href="https://startup.projectstartups.com" class="btn btn-primary btn-lg px-4 shadow-sm">Explore Funded Startups</a>
+    <a href="https://vc.projectstartups.com" class="btn btn-outline-primary btn-lg px-4 shadow-sm">Browse VC Database</a>
   </div>
+
+  <hr class="my-5 custom-hr">
+
+  <!-- Feature Cards Grid -->
+
+<div class="row text-start gx-4 gy-4">
+
+  <!-- VC Firms Directory -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card border-0 shadow-sm h-100 startup-card position-relative">
+      <a href="https://vc.projectstartups.com" class="text-decoration-none card-link stretched-link">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title fw-semibold mb-2">💼 VC Firms Directory</h5>
+            <p class="card-text text-muted small">
+              Discover 1000+ VC firms with data on portfolio, team, markets, and stages. Ideal for outreach, research, and analysis.
+            </p>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://vc.projectstartups.com" class="btn btn-sm btn-outline-primary shadow-sm px-4 fw-medium">Open ↗</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- VC Lists -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card border-0 shadow-sm h-100 startup-card position-relative">
+      <a href="https://vc.projectstartups.com/vc_list/" class="text-decoration-none card-link stretched-link">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title fw-semibold mb-2">📂 VC Lists</h5>
+            <p class="card-text text-muted small">
+              Explore filtered VC firm lists by geography, sector focus, or fund size. Useful for warm intros or tracking active investors.
+            </p>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://vc.projectstartups.com/vc_list/" class="btn btn-sm btn-outline-primary shadow-sm px-4 fw-medium">Open ↗</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Buy VC Lists -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card border-0 shadow-sm h-100 startup-card position-relative">
+      <a href="https://vc.projectstartups.com/buy/" class="text-decoration-none card-link stretched-link">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title fw-semibold mb-2">💳 Buy VC Lists</h5>
+            <p class="card-text text-muted small">
+              Get instant access to the full VC firm database in downloadable format. Great for dealmakers, researchers, and BD teams.
+            </p>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://vc.projectstartups.com/buy/" class="btn btn-sm btn-outline-primary shadow-sm px-4 fw-medium">Open ↗</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Funded Startups DB -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card border-0 shadow-sm h-100 startup-card position-relative">
+      <a href="https://startup.projectstartups.com" class="text-decoration-none card-link stretched-link">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title fw-semibold mb-2">🚀 Funded Startups Database</h5>
+            <p class="card-text text-muted small">
+              Explore 1000s of recently funded startups by sector, geography, and stage. Profiles include investors, funding amount, and direct links.
+            </p>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://startup.projectstartups.com" class="btn btn-sm btn-outline-primary shadow-sm px-4 fw-medium">Open ↗</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Startup Lists -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card border-0 shadow-sm h-100 startup-card position-relative">
+      <a href="https://startup.projectstartups.com/startup_list/" class="text-decoration-none card-link stretched-link">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title fw-semibold mb-2">📊 Startup Lists</h5>
+            <p class="card-text text-muted small">
+              Browse curated lists of funded startups by country, sector, or theme. Filtered and hand-organized for deeper insights.
+            </p>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://startup.projectstartups.com/startup_list/" class="btn btn-sm btn-outline-primary shadow-sm px-4 fw-medium">Open ↗</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Buy Startup Lists -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card border-0 shadow-sm h-100 startup-card position-relative">
+      <a href="https://startup.projectstartups.com/buy/" class="text-decoration-none card-link stretched-link">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title fw-semibold mb-2">💳 Buy Startup Lists</h5>
+            <p class="card-text text-muted small">
+              Download the full funded startup database with investor, market, and funding info. Ideal for research and sourcing.
+            </p>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://startup.projectstartups.com/buy/" class="btn btn-sm btn-outline-primary shadow-sm px-4 fw-medium">Open ↗</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
 </div>
 
-<script>
-  // Redirect after short delay (1 second)
-  setTimeout(function () {
-    window.location.href = "https://vc.projectstartups.com";
-  }, 1000);
-</script>
+
+
+  <hr class="my-5 custom-hr">
+
+  <!-- About Section -->
+
+<section class="text-center py-5">
+  <div class="container">
+    <h4 class="fw-bold mb-3">📣 About <span class="text-primary">projectstartups.com</span></h4>
+    <p class="lead text-muted col-lg-8 mx-auto mb-4">
+      <strong>projectstartups.com</strong> is a free, independent project that makes startup and investor data easier to explore, search, and download.<br>
+      We publish curated databases of recently funded startups and VC firms — structured, searchable, and open-access.
+    </p>
+  </div>
+</section>
+
+<hr class="my-5 custom-hr">
+
+<section class="text-center py-5">
+  <div class="container">
+    <h4 class="fw-bold mb-3">👋 From the Creator</h4>
+    <p class="lead text-muted col-lg-8 mx-auto mb-0">
+      I’m <strong>Pankaj Singh</strong>, working from a quiet village in Almora, Uttarakhand. I’ve been collecting and organizing startup data for over 5 years.<br><br>
+      Now, I focus on building clean, simple databases to help founders, investors, and researchers — with support from two local students.
+    </p>
+  </div>
+</section>
+
+<hr class="my-5 custom-hr">
+
+<section class="text-center py-5">
+  <div class="container">
+    <h4 class="fw-bold mb-3">🙌 Support This Work</h4>
+    <p class="lead text-muted col-lg-8 mx-auto mb-4">
+      If you find value in this project, you can support us by:
+    </p>
+    <ul class="list-unstyled text-muted fs-5 col-lg-6 mx-auto mb-4">
+      <li class="mb-2">✅ Purchasing full startup or VC firm datasets</li>
+      <li class="mb-2">✅ Sharing this site with your network</li>
+      <li>✅ Sending feedback or suggestions</li>
+    </ul>
+    <a href="https://payhip.com/projectstartups" class="btn btn-outline-primary shadow-sm px-4">Buy Full Database</a>
+  </div>
+</section>
+
+<hr class="my-5 custom-hr">
+
+
+
+</div>
