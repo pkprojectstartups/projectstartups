@@ -1,4 +1,4 @@
-# 🧠 Central Hub – projectstartups.com
+# 🧠 projectstartups.com
 
 **projectstartups.com** is the main control centre for exploring our global startup and VC datasets.  
 It connects the **Funded Startups** and **VC Firms** directories, and manages backend workflows and enrichment automations.
