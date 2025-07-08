@@ -23,5 +23,5 @@ include:
   - search.json
 
 # Optional plugins (uncomment if needed)
- plugins:
+plugins:
   - jekyll-sitemap
