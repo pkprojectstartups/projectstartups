@@ -1,9 +1,8 @@
 # Basic Site Settings
 title: "projectstartups.com – Open-access Databases of VCs and Funded Startups"
 description: "projectstartups.com is an open-access resource featuring comprehensive databases of venture capital firms and recently funded startups."
-
-baseurl: ""  # No subdirectory, root domain
-url: "https://projectstartups.com"  # Full site URL
+baseurl: ""  # No subdirectory
+url: "https://projectstartups.com"  # Root domain
 
 # Theme Settings
 theme: minima
@@ -19,7 +18,7 @@ kramdown:
 # Permalinks
 permalink: pretty  # Clean URLs (no .html)
 
-# Include files if needed
+# Include custom files if needed
 include:
   - search.json
 
