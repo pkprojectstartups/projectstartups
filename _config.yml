@@ -1,0 +1,28 @@
+# Basic Site Settings
+title: "projectstartups.com – Open-access Databases of VCs and Funded Startups"
+description: "projectstartups.com is an open-access resource featuring comprehensive databases of venture capital firms and recently funded startups."
+
+baseurl: ""  # No subdirectory, root domain
+url: "https://projectstartups.com"  # Full site URL
+
+# Theme Settings
+theme: minima
+
+styles:
+  - assets/css/style.css
+
+# Markdown Configuration
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+
+# Permalinks
+permalink: pretty  # Clean URLs (no .html)
+
+# Include files if needed
+include:
+  - search.json
+
+# Optional plugins (uncomment if needed)
+ plugins:
+  - jekyll-sitemap
