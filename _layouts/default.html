@@ -87,18 +87,18 @@
         <!-- Databases Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="databasesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Search VC/Startups
+            Search
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="databasesDropdown">
-            <li><a class="dropdown-item" href="https://vc.projectstartups.com/">Search VC Firms</a></li>
-            <li><a class="dropdown-item" href="https://startup.projectstartups.com/">Search Funded Startups</a></li>
+            <li><a class="dropdown-item" href="https://vc.projectstartups.com/">VC Firms</a></li>
+            <li><a class="dropdown-item" href="https://startup.projectstartups.com/">Funded Startups</a></li>
           </ul>
         </li>
 
         <!-- Lists Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="listsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            VC/Startup Lists
+            Lists
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="listsDropdown">
             <li><a class="dropdown-item" href="https://vc.projectstartups.com/vc_list/">VC Lists</a></li>
@@ -109,11 +109,11 @@
         <!-- Buy Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="buyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Download
+            Buy Now
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="buyDropdown">
-            <li><a class="dropdown-item" href="https://vc.projectstartups.com/buy/">Download VC Lists</a></li>
-            <li><a class="dropdown-item" href="https://startup.projectstartups.com/buy/">Download Startup Lists</a></li>
+            <li><a class="dropdown-item" href="https://vc.projectstartups.com/buy/">Buy VC lists</a></li>
+            <li><a class="dropdown-item" href="https://startup.projectstartups.com/buy/">Buy Startup lists</a></li>
           </ul>
         </li>
 
@@ -127,82 +127,29 @@
   <!-- Main Content -->
   <main class="container py-5 mt-5">
 
-<div class="text-center mt-4 mb-3 small" style="font-size: 0.9rem;">
-  <span class="text-muted d-block mb-2">Quick Access:</span>
-  <div class="d-flex flex-wrap justify-content-center gap-2">
-    <!-- Search -->
-    <a href="https://vc.projectstartups.com" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-search me-1"></i> Search VCs
-    </a>
-    <a href="https://startup.projectstartups.com" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-search me-1"></i> Search Startups
-    </a>
-    
-    <!-- Browse Lists -->
-    <a href="https://vc.projectstartups.com/vc_list/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-folder me-1"></i> Browse VCs
-    </a>
-    <a href="https://startup.projectstartups.com/startup_list/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-folder me-1"></i> Browse Startups
-    </a>
-    
-    <!-- Download/Purchase -->
-    <a href="https://vc.projectstartups.com/buy/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-download me-1"></i> Get VC Data
-    </a>
-    <a href="https://startup.projectstartups.com/buy/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-download me-1"></i> Get Startup Data
-    </a>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	  
     {{ content }}
 
-<div class="text-center mt-4 mb-3 small" style="font-size: 0.9rem;">
-  <span class="text-muted d-block mb-2">Quick Access:</span>
-  <div class="d-flex flex-wrap justify-content-center gap-2">
-    <!-- Search -->
-    <a href="https://vc.projectstartups.com" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-search me-1"></i> Search VCs
-    </a>
-    <a href="https://startup.projectstartups.com" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-search me-1"></i> Search Startups
-    </a>
-    
-    <!-- Browse Lists -->
-    <a href="https://vc.projectstartups.com/vc_list/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-folder me-1"></i> Browse VCs
-    </a>
-    <a href="https://startup.projectstartups.com/startup_list/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-folder me-1"></i> Browse Startups
-    </a>
-    
-    <!-- Download/Purchase -->
-    <a href="https://vc.projectstartups.com/buy/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-download me-1"></i> Get VC Data
-    </a>
-    <a href="https://startup.projectstartups.com/buy/" class="text-decoration-none text-primary px-2 py-1 rounded hover-effect">
-      <i class="bi bi-download me-1"></i> Get Startup Data
-    </a>
+
+
+
+
+
+
+<!-- Buy Section -->
+<div class="mt-4 text-center">
+  <p class="fw-semibold mb-2">Buy VC and Startups Lists</p>
+  <div class="d-flex justify-content-center gap-2 flex-wrap">
+    {% if site.url contains 'startup.projectstartups.com' and page.url == '/buy/' %}
+      <a href="https://vc.projectstartups.com/buy/" class="btn btn-sm btn-outline-primary">Buy VC Lists</a>
+    {% elsif site.url contains 'vc.projectstartups.com' and page.url == '/buy/' %}
+      <a href="https://startup.projectstartups.com/buy/" class="btn btn-sm btn-primary">Buy Startup Lists</a>
+    {% else %}
+      <a href="https://startup.projectstartups.com/buy/" class="btn btn-sm btn-primary">Buy Startup Lists</a>
+      <a href="https://vc.projectstartups.com/buy/" class="btn btn-sm btn-outline-primary">Buy VC Lists</a>
+    {% endif %}
   </div>
 </div>
-
 
 	  
 
@@ -249,6 +196,12 @@
 	
 	
   </main>
+  
+  
+    
+  
+  
+  
 
 <!-- Footer -->
 <footer class="bg-dark text-white mt-auto">
@@ -257,16 +210,16 @@
 
       <!-- Databases -->
       <div class="col-12 col-md-4 mb-4">
-        <h6 class="text-uppercase fw-bold mb-3">Search VC/Startups</h6>
+        <h6 class="text-uppercase fw-bold mb-3">Search</h6>
         <ul class="list-unstyled">
-          <li><a class="text-white text-decoration-none" href="https://vc.projectstartups.com/">Search VC Firms</a></li>
-          <li><a class="text-white text-decoration-none" href="https://startup.projectstartups.com/">Search Funded Startups</a></li>
+          <li><a class="text-white text-decoration-none" href="https://vc.projectstartups.com/">VC Firms</a></li>
+          <li><a class="text-white text-decoration-none" href="https://startup.projectstartups.com/">Funded Startups</a></li>
         </ul>
       </div>
 
       <!-- Lists -->
       <div class="col-12 col-md-4 mb-4">
-        <h6 class="text-uppercase fw-bold mb-3">VC/Startup Lists</h6>
+        <h6 class="text-uppercase fw-bold mb-3">Lists</h6>
         <ul class="list-unstyled">
           <li><a class="text-white text-decoration-none" href="https://vc.projectstartups.com/vc_list/">VC Lists</a></li>
           <li><a class="text-white text-decoration-none" href="https://startup.projectstartups.com/startup_list/">Startup Lists</a></li>
@@ -275,10 +228,10 @@
 
       <!-- Buy -->
       <div class="col-12 col-md-4 mb-4">
-        <h6 class="text-uppercase fw-bold mb-3">Download</h6>
+        <h6 class="text-uppercase fw-bold mb-3">Buy Now</h6>
         <ul class="list-unstyled">
-          <li><a class="text-white text-decoration-none" href="https://vc.projectstartups.com/buy/">Download VC Lists</a></li>
-          <li><a class="text-white text-decoration-none" href="https://startup.projectstartups.com/buy/">Download Startup Lists</a></li>
+          <li><a class="text-white text-decoration-none" href="https://vc.projectstartups.com/buy/">Buy VC lists</a></li>
+          <li><a class="text-white text-decoration-none" href="https://startup.projectstartups.com/buy/">Buy Startup lists</a></li>
         </ul>
       </div>
 
